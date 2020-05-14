@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#######################################################
+# File: gitlab-renew-cert                             #
+# Description: Renew RITlug GitLab Let's Encrypt cert #
+# Author: Tim Zabel <tjzabel@protonmail.com>	      #
+#######################################################
+
+function renew_cert {
+
+    gitlab-ctl stop
+    certbot renew
+    gitlab-ctl start
+
+    exit $?
+}
+
+renew_cert
