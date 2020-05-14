@@ -3,7 +3,7 @@
 #######################################################
 # File: gitlab-renew-cert                             #
 # Description: Renew RITlug GitLab Let's Encrypt cert #
-# Author: Tim Zabel <tjzabel@protonmail.com>	      #
+# Author: Tim Zabel <tjzabel@protonmail.com>          #
 #######################################################
 
 function renew_cert {
