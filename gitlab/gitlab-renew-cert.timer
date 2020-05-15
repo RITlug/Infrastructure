@@ -1,0 +1,10 @@
+[Unit]
+Description=Renew RITlug GitLab web cert
+
+[Timer]
+# Renew cert weekly on Wednesdays at 3AM EDT
+OnCalendar=Wed *-*-* 03:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

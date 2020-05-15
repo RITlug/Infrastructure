@@ -1,0 +1,8 @@
+[Unit]
+Description=Renew RITlug GitLab web cert
+Requires=network.target
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/gitlab-renew-cert
