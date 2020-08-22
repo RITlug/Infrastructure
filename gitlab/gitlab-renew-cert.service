@@ -5,4 +5,4 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/gitlab-renew-cert
+ExecStart=/bin/bash /usr/local/bin/gitlab-renew-cert
